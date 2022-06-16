@@ -8,9 +8,11 @@
     font-family: 'Poppins', sans-serif;
 }
 body {
+    
     background: url(img/bg-intro-desktop.png) repeat center center fixed;
     background-color: hsl(0, 100%, 74%);
-    
+    height: 700px;
+    width: 1440px;
 }
 form{
     height: 100%;
@@ -48,9 +50,9 @@ a{
     font-size: 10px;
 }
 .container {
-    height: 600px;
-    width: 100%;
-    max-width: 1440px;
+    height: 700px;
+    /* width: 900px; */
+    width: 900px;
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -119,10 +121,31 @@ a{
     background-color: rgb(31, 119, 31);
     
 }
-@media only screen and (max-width: 375px) {
-    .container{
+input:required:focus:invalid {
+    background-image: url("");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: right;
+    border-color:red;
+  }
+  button:hover{
+    opacity: 60%;
+  }
+  
+  input:invalid {
+    border-color: black;
+    background-image: url("img/icon-error.svg");
+    background-size: 25px;
+    background-repeat: no-repeat;
+    background-position: right;
+    content: attr(data-error);
+  }
+@media only screen and (max-width: 375px){
+    body{
         display: flex;
         flex-direction: column;
-        width: 50%;
+        min-height: 4000px;
+        
     }
+    
 }
