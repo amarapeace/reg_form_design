@@ -7,13 +7,7 @@
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
-body {
-    
-    background: url(img/bg-intro-desktop.png) repeat center center fixed;
-    background-color: hsl(0, 100%, 74%);
-    height: 700px;
-    width: 1440px;
-}
+
 form{
     height: 100%;
     width: 100%;
@@ -50,38 +44,38 @@ a{
     font-size: 10px;
 }
 .container {
-    height: 700px;
-    /* width: 900px; */
+    height: 550px;
     width: 900px;
     padding: 30px;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    background: url(img/bg-intro-desktop.png) ;
+    background-color: hsl(0, 100%, 74%);
+    
 
 }
 .box1{
-    height: 85%;
+    height: 90%;
     width: 45%;
     padding: 10px;
     padding-top: 30px;
     border: 5px;
     margin: 5px;
     color: white;
-    box-sizing: border-box;
     text-align: justify;
 
 
 }
 .box2{
-    height: 85%;
+    height: 90%;
     width: 45%;
     padding: 5px;
     border: 5px;
     margin: 5px;
     display: flex;
     flex-direction: column;
-    float: right;
 
 }
 .formtop{
@@ -141,11 +135,12 @@ input:required:focus:invalid {
     content: attr(data-error);
   }
 @media only screen and (max-width: 375px){
-    body{
-        display: flex;
+    .container{
         flex-direction: column;
-        min-height: 4000px;
-        
+       background-image: url("img/bg-intro-mobile.png");
+       margin-top: 0;
+       box-sizing: border-box;
+       height: auto;
     }
     
 }
